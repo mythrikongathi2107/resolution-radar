@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="range"].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].slider::-webkit-slider-track {
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(6, 182, 212, 0.4);
+}
+
+input[type="range"].slider::-moz-range-track {
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(6, 182, 212, 0.4);
+  border: none;
+}
+
+input[type="range"].slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(6, 182, 212, 0.4);
+}
+
+input[type="range"].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.8), 0 2px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+  margin-top: -7px;
+}
+
+input[type="range"].slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.8), 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+input[type="range"].slider::-moz-range-track {
+  background: transparent;
+  border: none;
+}
+
+input[type="range"].slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 16px rgba(6, 182, 212, 1), 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="range"].slider::-moz-range-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 16px rgba(6, 182, 212, 1), 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
+}
